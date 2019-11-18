@@ -1,0 +1,4 @@
+k8s_cassandracluster_memory_request: 2Gi
+k8s_cassandracluster_memory_limit: 2Gi
+k8s_cassandracluster_cpu_request: 1
+k8s_cassandracluster_cpu_limit: 1

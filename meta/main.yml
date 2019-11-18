@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  author: Alex Chistyakov
+  description: installs a Cassandra cluster using the Cassandra operator
+  role_name: k8s-cassandracluster
+  license: MIT
+
+  min_ansible_version: 2.7
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+
+  galaxy_tags:
+    - kubernetes
+    - k8s
+    - cassandra
+
+dependencies: []

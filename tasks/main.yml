@@ -1,0 +1,11 @@
+- name: put cassandra-configmap-v1.yml
+  template: src=cassandra-configmap-v1.yml dest=/root/cassandra-configmap-v1.yml
+
+- name: apply cassandra-configmap-v1.yml
+  command: kubectl apply -f /root/cassandra-configmap-v1.yml -n {{ k8s_namespace }}
+
+- name: put cassandracluster.yml
+  template: src=cassandracluster.yml dest=/root/cassandracluster.yml
+
+- name: apply cassandracluster.yml
+  command: kubectl apply -f /root/cassandracluster.yml -n {{ k8s_namespace }}
